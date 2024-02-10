@@ -2,7 +2,7 @@
 class Actors {
     constructor (name, role) {
         this.name = name;
-        this.rold = role;
+        this.role = role;
     }
 
     describe() {
@@ -17,7 +17,7 @@ class Movie {
     }
 //adding an actor
     addActor(actor) {
-        if (actor instanceof Actor) {
+        if (actor instanceof Actors) {
             this.actors.push(actor);
         } else {
             throw new Error(`You can only add and actor, Argument is not an Actor: ${actor}`);
